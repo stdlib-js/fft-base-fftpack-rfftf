@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/fft-base-fftpack-rfftf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import rfftf from 'https://cdn.jsdelivr.net/gh/stdlib-js/fft-base-fftpack-rfftf@deno/mod.js';
+var rfftf = require( '@stdlib/fft-base-fftpack-rfftf' );
 ```
 
 #### rfftf( N, r, strideR, offsetR, w, strideW, offsetW )
@@ -60,8 +78,8 @@ import rfftf from 'https://cdn.jsdelivr.net/gh/stdlib-js/fft-base-fftpack-rfftf@
 Computes the forward discrete Fourier transform (DFT) of a real-valued sequence.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import rffti from 'https://cdn.jsdelivr.net/gh/stdlib-js/fft-base-fftpack-rffti@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
+var rffti = require( '@stdlib/fft-base-fftpack-rffti' );
 
 var N = 4;
 var w = new Float64Array( ( 2*N ) + 34 );
@@ -122,10 +140,10 @@ The function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@deno/mod.js';
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import rffti from 'https://cdn.jsdelivr.net/gh/stdlib-js/fft-base-fftpack-rffti@deno/mod.js';
-import rfftf from 'https://cdn.jsdelivr.net/gh/stdlib-js/fft-base-fftpack-rfftf@deno/mod.js';
+var zeros = require( '@stdlib/array-zeros' );
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var rffti = require( '@stdlib/fft-base-fftpack-rffti' );
+var rfftf = require( '@stdlib/fft-base-fftpack-rfftf' );
 
 var N = 4;
 var opts = {
@@ -171,7 +189,7 @@ console.log( r );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -234,9 +252,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/fft-base-fftpack-rfftf/main/LICENSE
 
-[@stdlib/fft/base/fftpack/rffti]: https://github.com/stdlib-js/fft-base-fftpack-rffti/tree/deno
+[@stdlib/fft/base/fftpack/rffti]: https://github.com/stdlib-js/fft-base-fftpack-rffti
 
-[@stdlib/fft/base/fftpack/rfftb]: https://github.com/stdlib-js/fft-base-fftpack-rfftb/tree/deno
+[@stdlib/fft/base/fftpack/rfftb]: https://github.com/stdlib-js/fft-base-fftpack-rfftb
 
 </section>
 
